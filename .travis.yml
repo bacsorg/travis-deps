@@ -3,7 +3,7 @@ dist: trusty
 language: generic
 
 env:
-  - MATRIX_EVAL="CC=gcc CXX=g++"
+  - MATRIX_EVAL="export CC=gcc CXX=g++"
 
 before_install:
   - eval "$MATRIX_EVAL"
