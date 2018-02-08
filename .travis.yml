@@ -1,0 +1,13 @@
+sudo: false
+dist: trusty
+language: generic
+
+env:
+  - MATRIX_EVAL="CC=gcc CXX=g++"
+
+before_install:
+  - eval "$MATRIX_EVAL"
+
+install: env
+
+script: env
